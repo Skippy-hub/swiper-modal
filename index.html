@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <section class="hero">
+        <div class="container container--bg">
+            <img class="hero__emperor" src="./img/imperor.jpg" alt="God-Emperor">
+            <h1 class="hero__title">Бог-Император</h1>
+            <p class="hero__description text">Император Человечества, известный также как Повелитель Человечества, Бог-Император или просто Император — основатель и правитель Империума.</p>
+            <p class="hero__text text">«Вот уже более ста веков Император неподвижно восседает на Золотом Троне Терры. По воле богов он является Повелителем Человечества и правит миллионом миров благодаря мощи своих неисчислимых армий. Он — гниющий полутруп, чьи незримые муки продлеваются загадочными устройствами Тёмной Эры Технологий. Он — разлагающийся властелин Империума, которому каждый день приносят в жертву тысячу душ, чью кровь он пьёт и поедает плоть. На крови и плоти человеческой стоит сам Империум.»</p>
+        </div>
+    </section>
+    <section class="ordos">
+        <div class="container container--bg">
+            <h2 class="ordos__title">Ордос</h2>
+            <div class="ordos__buttons">
+                <button class="ordos__buttons-button button--malleus">Ордо Маллеус</button>
+                <button class="ordos__buttons-button button--xenos">Ордо Ксенос</button>
+                <button class="ordos__buttons-button button--hereticus">Ордо Еретикус</button>
+            </div>
+        </div>
+    </section>
+    <section class="gallery">
+        <div class="container container--bg">
+            <h2 class="gallery__title">Лик Императора</h2>
+            <div class="swiper">
+
+                <div class="swiper-wrapper">
+                    
+                    <div class="swiper-slide"><img class="swiper-slide-img" src="./img/face-imperor.webp" alt=""></div>
+                    <div class="swiper-slide"><img class="swiper-slide-img" src="./img/imperor&children.jpg" alt=""></div>
+                    <div class="swiper-slide"><img class="swiper-slide-img" src="./img/icon.jpg" alt=""></div>
+                    <div class="swiper-slide"><img class="swiper-slide-img" src="./img/imperor.webp" alt=""></div>
+                    <div class="swiper-slide"><img class="swiper-slide-img" src="./img/imperor-dead.jpg" alt=""></div>
+                </div>
+                
+                <div class="swiper-pagination"></div>
+
+                
+                <div class="swiper-button-prev"></div>
+                <div class="swiper-button-next"></div>
+            </div>
+        </div>
+    </section>
+
+    <div class="modal modal-malleus modal--hidden">
+        <div class="modal__content">
+            <button class="modal__close"></button>
+            <img class="modal__img" src="./img/ordo-malleus.png" alt="">
+            <div class="modal__description">
+                <p class="modal__description-text">«У демона множество обличий и ты должен знать их все. Ты должен уметь разоблачать демона, дабы изгонять из тёмных нор, где он прячется. Не доверяй никому. Даже себе. Лучше умереть напрасно, чем жить чудовищем. Праведного мученика восхваляют за доблесть. Жалкого труса презирают по праву.»</p>
+                <p class="modal__description-text">Ордо Маллеус — имперские охотники на демонов. Их задача — очищать миры от деятельности и присутствия культов Хаоса, что скрываются в имперском обществе, до того, как их запретное поклонение приведет к демоническому вторжению.</p>
+            </div>
+        </div>
+    </div>
+
+
+    <div class="modal modal-xenos modal--hidden">
+        <div class="modal__content">
+            <button class="modal__close"></button>
+            <img class="modal__img" src="./img/ordo-xenos.png" alt="">
+            <div class="modal__description">
+                <p class="modal__description-text">«Сострадание оставьте для слуг Императора; чужаки достойны лишь нашего презрения»</p>
+                <p class="modal__description-text">Ордо Ксенос изучает, эксплуатирует и уничтожает пришельцев. Большинство инквизиторов Ордо Ксенос посвящают свою жизнь борьбе с одним конкретным видом чужаков, прежде всего, потому что в Галактике столько же разных рас, сколько и звёзд, и никто не может надеяться сразиться с ними всеми одновременно.</p>
+            </div>
+        </div>
+    </div>
+
+
+    <div class="modal modal-hereticus modal--hidden">
+        <div class="modal__content">
+            <button class="modal__close"></button>
+            <img class="modal__img" src="./img/ordo-hereticus.png" alt="">
+            <div class="modal__description">
+                <p class="modal__description-text">«Ты думаешь, что знаешь, что такое ересь?»</p>
+                <p class="modal__description-text">Ордо Еретикус — крупнейший ордос, его инквизиторы высматривают врагов среди жителей самого Империума. Членов Ордо Еретикус иногда называют «охотниками на ведьм» из-за того, какое внимание они уделяют поимке псайкеров.</p>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="./script.js"></script>
+</body>
+</html>
